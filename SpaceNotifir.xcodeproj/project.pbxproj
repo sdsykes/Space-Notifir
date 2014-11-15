@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0161A381A1628630074FA47 /* boxSub.m in Sources */ = {isa = PBXBuildFile; fileRef = A0161A371A1628630074FA47 /* boxSub.m */; };
+		A08B53791A134A2500906D4A /* IndexSub.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B53781A134A2500906D4A /* IndexSub.m */; };
+		A08B537F1A14D71B00906D4A /* currentSpace in Resources */ = {isa = PBXBuildFile; fileRef = A08B537E1A14D71B00906D4A /* currentSpace */; };
+		A08B53811A14D96400906D4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B53801A14D96400906D4A /* Foundation.framework */; };
+		A08B53871A1533D900906D4A /* IndexCircleSub.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B53861A1533D900906D4A /* IndexCircleSub.m */; };
 		A0E0AC311A1294B800075941 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E0AC301A1294B800075941 /* AppDelegate.m */; };
 		A0E0AC331A1294B800075941 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E0AC321A1294B800075941 /* main.m */; };
 		A0E0AC351A1294B800075941 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E0AC341A1294B800075941 /* Images.xcassets */; };
 		A0E0AC381A1294B800075941 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0AC361A1294B800075941 /* MainMenu.xib */; };
 		A0E0AC441A1294B900075941 /* Space_NotifirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E0AC431A1294B900075941 /* Space_NotifirTests.m */; };
+		A0FE4DA61A129B76009DC5D5 /* myWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE4DA51A129B76009DC5D5 /* myWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0161A361A1628630074FA47 /* boxSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boxSub.h; sourceTree = "<group>"; };
+		A0161A371A1628630074FA47 /* boxSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = boxSub.m; sourceTree = "<group>"; };
+		A08B53771A134A2500906D4A /* IndexSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexSub.h; sourceTree = "<group>"; };
+		A08B53781A134A2500906D4A /* IndexSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexSub.m; sourceTree = "<group>"; };
+		A08B537E1A14D71B00906D4A /* currentSpace */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = currentSpace; sourceTree = "<group>"; };
+		A08B53801A14D96400906D4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A08B53851A1533D900906D4A /* IndexCircleSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCircleSub.h; sourceTree = "<group>"; };
+		A08B53861A1533D900906D4A /* IndexCircleSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCircleSub.m; sourceTree = "<group>"; };
 		A0E0AC2A1A1294B800075941 /* Space Notifir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Notifir.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E0AC2E1A1294B800075941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E0AC2F1A1294B800075941 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +49,8 @@
 		A0E0AC3D1A1294B900075941 /* Space NotifirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space NotifirTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E0AC421A1294B900075941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E0AC431A1294B900075941 /* Space_NotifirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_NotifirTests.m; sourceTree = "<group>"; };
+		A0FE4DA41A129B76009DC5D5 /* myWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myWindow.h; sourceTree = "<group>"; };
+		A0FE4DA51A129B76009DC5D5 /* myWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08B53811A14D96400906D4A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +75,11 @@
 		A0E0AC211A1294B800075941 = {
 			isa = PBXGroup;
 			children = (
+				A08B53801A14D96400906D4A /* Foundation.framework */,
 				A0E0AC2C1A1294B800075941 /* Space Notifir */,
 				A0E0AC401A1294B900075941 /* Space NotifirTests */,
 				A0E0AC2B1A1294B800075941 /* Products */,
+				A08B537E1A14D71B00906D4A /* currentSpace */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +97,17 @@
 			children = (
 				A0E0AC2F1A1294B800075941 /* AppDelegate.h */,
 				A0E0AC301A1294B800075941 /* AppDelegate.m */,
+				A08B53771A134A2500906D4A /* IndexSub.h */,
+				A08B53781A134A2500906D4A /* IndexSub.m */,
+				A0FE4DA41A129B76009DC5D5 /* myWindow.h */,
+				A0FE4DA51A129B76009DC5D5 /* myWindow.m */,
 				A0E0AC341A1294B800075941 /* Images.xcassets */,
 				A0E0AC361A1294B800075941 /* MainMenu.xib */,
 				A0E0AC2D1A1294B800075941 /* Supporting Files */,
+				A08B53851A1533D900906D4A /* IndexCircleSub.h */,
+				A08B53861A1533D900906D4A /* IndexCircleSub.m */,
+				A0161A361A1628630074FA47 /* boxSub.h */,
+				A0161A371A1628630074FA47 /* boxSub.m */,
 			);
 			path = "Space Notifir";
 			sourceTree = "<group>";
@@ -167,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A0E0AC251A1294B800075941 /* Build configuration list for PBXProject "Space Notifir" */;
+			buildConfigurationList = A0E0AC251A1294B800075941 /* Build configuration list for PBXProject "SpaceNotifir" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,6 +220,7 @@
 			files = (
 				A0E0AC351A1294B800075941 /* Images.xcassets in Resources */,
 				A0E0AC381A1294B800075941 /* MainMenu.xib in Resources */,
+				A08B537F1A14D71B00906D4A /* currentSpace in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08B53871A1533D900906D4A /* IndexCircleSub.m in Sources */,
+				A0FE4DA61A129B76009DC5D5 /* myWindow.m in Sources */,
+				A0161A381A1628630074FA47 /* boxSub.m in Sources */,
 				A0E0AC331A1294B800075941 /* main.m in Sources */,
 				A0E0AC311A1294B800075941 /* AppDelegate.m in Sources */,
+				A08B53791A134A2500906D4A /* IndexSub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +414,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0E0AC251A1294B800075941 /* Build configuration list for PBXProject "Space Notifir" */ = {
+		A0E0AC251A1294B800075941 /* Build configuration list for PBXProject "SpaceNotifir" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0E0AC451A1294B900075941 /* Debug */,
@@ -398,6 +430,7 @@
 				A0E0AC491A1294B900075941 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0E0AC4A1A1294B900075941 /* Build configuration list for PBXNativeTarget "Space NotifirTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +439,7 @@
 				A0E0AC4C1A1294B900075941 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
