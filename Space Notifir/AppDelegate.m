@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TSLib.h"
 
 @implementation AppDelegate
 @synthesize NotifirWindow;
@@ -89,6 +90,18 @@
         [NotifirLabel setStringValue:@"Forwards"];
         currentSpaceIndex += 1;
     }
+    
+    
+    NSString *spaceName = @"";
+    const char *name = tsapi_spaceNameForSpaceNumberOnDisplay([data intValue], 0);
+    if (name) {
+        spaceName = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
+        tsapi_freeString((char *)name);
+    }
+    [NotifirLabel setStringValue:spaceName];  // or put the name anywhere you wish
+    
+    
+    
     // Show
     [self.NotifirWindow setAlphaValue:1];
     [self.NotifirWindow orderFront:self];

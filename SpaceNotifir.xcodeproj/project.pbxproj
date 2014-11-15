@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AADF04C1A178E400006528F /* libtotalspaces2api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AADF04B1A178E400006528F /* libtotalspaces2api.dylib */; };
+		3AADF04F1A178E660006528F /* libtotalspaces2api.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3AADF04B1A178E400006528F /* libtotalspaces2api.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A0161A381A1628630074FA47 /* boxSub.m in Sources */ = {isa = PBXBuildFile; fileRef = A0161A371A1628630074FA47 /* boxSub.m */; };
 		A08B53791A134A2500906D4A /* IndexSub.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B53781A134A2500906D4A /* IndexSub.m */; };
 		A08B537F1A14D71B00906D4A /* currentSpace in Resources */ = {isa = PBXBuildFile; fileRef = A08B537E1A14D71B00906D4A /* currentSpace */; };
@@ -30,7 +32,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3AADF04E1A178E5A0006528F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3AADF04F1A178E660006528F /* libtotalspaces2api.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3AADF04B1A178E400006528F /* libtotalspaces2api.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtotalspaces2api.dylib; sourceTree = "<group>"; };
+		3AADF04D1A178E450006528F /* TSLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLib.h; sourceTree = "<group>"; };
 		A0161A361A1628630074FA47 /* boxSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boxSub.h; sourceTree = "<group>"; };
 		A0161A371A1628630074FA47 /* boxSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = boxSub.m; sourceTree = "<group>"; };
 		A08B53771A134A2500906D4A /* IndexSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexSub.h; sourceTree = "<group>"; };
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AADF04C1A178E400006528F /* libtotalspaces2api.dylib in Frameworks */,
 				A08B53811A14D96400906D4A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +115,7 @@
 			children = (
 				A0E0AC2F1A1294B800075941 /* AppDelegate.h */,
 				A0E0AC301A1294B800075941 /* AppDelegate.m */,
+				3AADF04D1A178E450006528F /* TSLib.h */,
 				A08B53771A134A2500906D4A /* IndexSub.h */,
 				A08B53781A134A2500906D4A /* IndexSub.m */,
 				A0FE4DA41A129B76009DC5D5 /* myWindow.h */,
@@ -115,6 +134,7 @@
 		A0E0AC2D1A1294B800075941 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AADF04B1A178E400006528F /* libtotalspaces2api.dylib */,
 				A0E0AC2E1A1294B800075941 /* Info.plist */,
 				A0E0AC321A1294B800075941 /* main.m */,
 			);
@@ -148,6 +168,8 @@
 				A0E0AC261A1294B800075941 /* Sources */,
 				A0E0AC271A1294B800075941 /* Frameworks */,
 				A0E0AC281A1294B800075941 /* Resources */,
+				3AADF04E1A178E5A0006528F /* CopyFiles */,
+				3AADF0501A178E6B0006528F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,6 +254,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AADF0501A178E6B0006528F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MYLIBNAME=libtotalspaces2api.dylib\ninstall_name_tool -change /usr/local/lib/$MYLIBNAME @executable_path/../Frameworks/$MYLIBNAME  \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0E0AC261A1294B800075941 /* Sources */ = {
@@ -360,6 +398,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Space Notifir/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Space",
+					Notifir,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -371,6 +414,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Space Notifir/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Space",
+					Notifir,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
