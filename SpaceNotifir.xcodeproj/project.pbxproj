@@ -400,8 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Space",
-					Notifir,
+					"$(PROJECT_DIR)/Space\\ Notifir",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,8 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Space",
-					Notifir,
+					"$(PROJECT_DIR)/Space\\ Notifir",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
